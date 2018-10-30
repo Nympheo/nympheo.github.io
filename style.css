@@ -26,10 +26,9 @@ h2 {
     color: ;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
     text-rendering: optimizeLegibility;
-  text-transform: uppercase;
-
+    text-transform: uppercase;
   }
 
 .footer h2{
@@ -50,31 +49,94 @@ h2 {
 .dark_text{
   color: #333333;
 }
+
+.titlewrapper {
+  position: relative;
+  margin-left: 60px;
+  display: block;
+}
+.headtitle {
+  background-color: #262626;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px dotted #595959;
+  background-image: url('rubber_grip.png');
+  background-repeat: repeat;
+}
+  .myName {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0px, 1px, 0px);
+    text-align: left;
+    padding-left: 0px;
+      margin: 5px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      height: 25px;
+  }
   .subtext {
-    color: #bcbcbc;
+    color: #d9d9d9;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    display: table-cell;
+    font-size: 14px;
+    display: inline-block;
     transform: translate3d(0px, 1px, 0px);
     vertical-align: middle;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 10px;
   }
-  .itemname {
-    color: rgb(7, 127, 214);
-    font-family: 'Lato', sans-serif;
-    font-size: 44px;
-    font-weight: 900;
-    display: table-cell;
+  .contact {
+    text-align: right;
     vertical-align: middle;
-    transform: translate3d(0px, 1px, 0px);
+    padding-top: 15px;
+    display: inline-block;
+float: right;
+padding-right: 15px;
+  }
+
+  .contact > p > a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  #items {
     text-align: center;
-    padding-left: 600px;
-      margin: 30px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+  }
+  #items > li {
+    display: inline-block;
+    margin: 0.35rem 0.5rem;
+  }
+  #items > li > a > img {
+    border: 1px solid black;
+  }
+  /* .item {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    background: rgb(0, 148, 255);
+    padding: 80px 13px 10px 13px;
+    text-decoration: none;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all .3s;
+  } */
+  .active_item {
+    /* background: #e97a33;
+    text-decoration: none; */
+    box-shadow: 0px 34px 24px -26px rgba(255,191,0,1);
+      transition: all .3s;
   }
   .divider {
     background-color: rgba(0, 0, 0, 0.2);
@@ -84,29 +146,14 @@ h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
   .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   text-align: center;
   }
-  .titlewrapper {
-    position: relative;
-    margin-left: 60px;
-    display: table;
-    text-align: center;
 
-  }
-.headtitle {
-    background-color: #262626;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 1px dotted #595959;
-    background-image: url('rubber_grip.png');
-  background-repeat: repeat;
-  }
 .theme_color {
     height: 120px;
     width: 125px;
@@ -118,29 +165,44 @@ h2 {
   background-image: url('rubber_grip.png');
     background-repeat: repeat;
 }
-
+#buttons{
+  text-align: center;
+  margin: 25px auto;
+}
 #buttons > li {
   display: inline-block;
   margin: 0.35rem 0.5rem;
+
 }
 .button {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
+  color: #363636;
   font-size: 15px;
-  background: rgb(0, 148, 255);
+  background: white;
+
   padding: 10px 15px 10px 15px;
   text-decoration: none;
   border: 0 !important;
   outline: none !important;
   box-shadow: none !important;
   transition: all .3s;
+
+
+
+}
+
+#buttons > li:hover {
+
+  box-shadow: inset 5em 1em 1em 1em rgb(168, 168, 168);
 }
 
 .button:hover {
-  background: #045096;
+
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
   text-decoration: none;
 }
 
@@ -155,10 +217,7 @@ h2 {
 .button::-moz-focus-inner {
   border: 0 !important;
 }
-#buttons{
-  text-align: center;
-  margin: 45px auto;
-}
+
 #desc{
   margin: 20px auto;
 }

@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <title>Dmitry Z.</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="headtitle">
+			<div class="titlewrapper">
+				<div class="myName">Zhuravkin Dmitry</div>
+				<div class="subtext">HTML5 Banner Ad</div>
+        <div class="contact">
+          <p>
+            <a href="mailto:synthetic.probe@gmail.com">
+              synthetic.probe@gmail.com
+            </a>
+          </p>
+          <p>
+            <a href="tel:+375333325404">
+              +375(33)3325404
+            </a>
+          </p>
+        </div>
+			</div>
+      <div class="itemsPanel">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <ul id="items">
+                <li>
+                  <a href="../index.html" class="">
+                    <img src="../thumbnails/e-shop.jpg" class="active_item">
+                  </a>
+                </li>
+                <li>
+                  <a href="../catawiki.html" class="">
+                    <img src="../thumbnails/catawiki.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../silversea.html" class="">
+                    <img src="../thumbnails/silversea.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../bosch.html" class="">
+                    <img src="../thumbnails/bosch.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../dewitgoed.html" class="">
+                    <img src="../thumbnails/dewitgoed.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../sales.html" class="">
+                    <img src="../thumbnails/sales.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="acura.html" class="">
+                    <img src="../thumbnails/acura.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../e-sight.html" class="">
+                    <img src="../thumbnails/e-sight.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../retail.html" class="">
+                    <img src="../thumbnails/retail.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../yoga.html" class="">
+                    <img src="../thumbnails/yoga.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="../travel.html" class="">
+                    <img src="../thumbnails/travel.jpg">
+                  </a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+		</div>
+	<div class="divider"></div>
+	<div class="content">
+		<div class="container">
+			<iframe class="iframe" frameborder="0" src="336x280/main.html" width="336" height="280">Banner</iframe>
+		</div>
+	</div>
+	<div class="divider"></div>
+		<div class="footer">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td align="center">
+            <ul id="buttons">
+      				<li><a href="../index.html" class="button ">160x600</a></li>
+              <li><a href="300x250.html" class="button">300x250</a></li>
+      				<li><a href="336x280.html" class="button active_btn">336x280</a></li>
+      				<li><a href="300x600.html" class="button">300x600</a></li>
+      				<li><a href="728x90.html" class="button">728x90</a></li>
+      				<li><a href="970x250.html" class="button">970x250</a></li>
+      			</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script language="JavaScript">
+
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+</body>
+</html>
